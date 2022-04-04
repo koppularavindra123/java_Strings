@@ -91,4 +91,71 @@ public class Vowel_word {
 }
 }
 
-
+/*InputStreamReader isr=new InputStreamReader(System.in);
+		BufferedReader br=new BufferedReader(isr);
+		String str1;
+		int i,l=0,u=0,d=0,s=0;
+		str1=br.readLine();
+		char ch[]=str1.toCharArray();
+		for(i=0;i<ch.length;i++)
+	if(Character.isLowerCase(ch[i]))
+	{
+		l++;
+	}
+	else if (Character.isUpperCase(ch[i]))
+			{
+				u++;
+			}
+	else if (Character.isDigit(ch[i]))
+		{
+		d++;
+		}
+	else
+	{
+		s++;
+	}
+		System.out.println(l+" "+u+" "+d+" "+s);
+		}
+		}*/
+		
+		/*InputStreamReader isr=new InputStreamReader(System.in);
+		BufferedReader br=new BufferedReader(isr);
+		String a;
+		int sum=0;
+		a=br.readLine();
+		char c[]=a.toCharArray();
+		for (int i=0;i<c.length;i++)
+		{
+			if (Character.isDigit(c[i]))
+				sum+=Integer.parseInt(c[i]+"");// another approach by using c[i]-48// here 48 means its a unicode of zero
+		}
+		System.out.println(sum);
+	}
+		
+}*/
+		
+		InputStreamReader isr=new InputStreamReader(System.in);
+		BufferedReader br=new BufferedReader(isr);
+		String s1;
+		StringBuffer sb1;
+		s1=br.readLine();
+		String words[]=s1.split(" ");
+			for(int i=0;i<words.length;i++)		
+		{
+			sb1=new StringBuffer(words[i]);
+			System.out.print(sb1.reverse()+" ");
+		}
+		/*sb.setCharAt(0,'r'); // setting the 'r' at index 0
+		sb.deleteCharAt(5);// deleting the char at index 5*/
+		// sb.reverse();
+		//sb.delete(5,8);
+		//sb.append('reddy');
+		//sb.insert(4,'e'); // (index, character)
+		// length and capacity sb func can be executed within the System.out statement 
+		
+		
+	}
+}
+		
+		
+	
